@@ -3,9 +3,13 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
+
         int choice;
+
         Registrar registrar = new Registrar();
+
         System.out.println("Welcome to Hogwarts University");
 
         do {
@@ -25,6 +29,7 @@ public class Main {
                      [6.EXIT]
 
                      """);
+                     
             choice = scanner.nextInt();
 
             switch (choice) {

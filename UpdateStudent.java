@@ -22,17 +22,21 @@ public class UpdateStudent extends AddStudent {
                 System.out.println("Exiting updating process.");
                 break;
             }
+            
             int indexStudentID = studentID.indexOf(studID);
 
             if (indexStudentID != -1) {
+
                 scanner.nextLine();
 
                 System.out.println("What do you want to update?");
                 System.out.println("1. Student Full Name\n2. Student ID\n3. Grades\n4. Exit");
                 System.out.print("Choose an option (1-4): ");
+
                 int choice = scanner.nextInt();
 
                 switch (choice) {
+
                     case 1:
                         scanner.nextLine();
                         System.out.print("New Student Full Name: ");
@@ -57,9 +61,13 @@ public class UpdateStudent extends AddStudent {
                         return;
                     default:
                         System.out.println("Invalid choice. Please try again.");
+
                 }
+                
             } else {
+
                 System.out.println("Student ID not found. Please try again.");
+
             }
         }
     }

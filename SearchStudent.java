@@ -64,7 +64,7 @@ public class SearchStudent {
 
             if (indexStudentID != -1) {
                 String studName = student.get(indexStudentID);
-                List<Double> studGrades = new ArrayList<>();
+                ArrayList<Double> studGrades = new ArrayList<>();
                 double totalGrades = 0.0;
                 for (int i = 0; i < 5; i++) {
                     double grade = grades.get(indexStudentID * 5 + i);
