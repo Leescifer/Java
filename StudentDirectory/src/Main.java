@@ -4,16 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // initialize Scanner to read user input
 
-        int choice;
+        int choice; // variable to store the user's choice
 
-        Registrar registrar = new Registrar();
+        Registrar registrar = new Registrar(); // create an instance of the Registrar class
 
-        System.out.println("Welcome to Hogwarts University");
+        System.out.println("Welcome to Hogwarts University"); 
 
+        /* Main Menu */
         do {
-
+        // display the main menu options to the user
             System.out.println("""
                      _____________
                     [1.ADD STUDENT]
@@ -27,15 +28,16 @@ public class Main {
                      [5.VIEW STUDENT]
                       ______
                      [6.EXIT]
-
+ 
                      """);
                      
             choice = scanner.nextInt();
-
+            // read the user's choice from the console
             switch (choice) {
                 case 1:
                     registrar.AddStudent();
                     break;
+
                 case 2:
                     registrar.deleteStudent();
                     break;
@@ -63,6 +65,6 @@ public class Main {
 
         } while (choice != 6);
 
-        scanner.close();
+        scanner.close(); // close scanner
     }
 }
